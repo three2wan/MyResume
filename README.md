@@ -1,3 +1,1 @@
-Create Resume using Latex
-=========================
-
+Write Resume using Latex
