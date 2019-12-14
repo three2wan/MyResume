@@ -1,0 +1,160 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{import}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Mohd Syazwan}{B. Mohd Jamil}
+% \address{}{}{} % optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #4}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+    \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #5}
+  \end{tabular}
+  \ifx&#7&
+  \else{\\
+    \begin{minipage}{\maincolumnwidth}
+      \small#7
+    \end{minipage}}\fi
+  \par\addvspace{#1}
+}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%           resume content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+\vspace*{-18mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+    \faGlobe\enspace syazwanjamil.my & \faEnvelopeO\enspace syazwan\_jamil88@yahoo.com & \faMobile\enspace 0172342869
+\end{tabular}
+\begin{tabular}{ c c }
+    \faGithub\enspace three2wan & \faLinkedin\enspace www.linkedin.com/in/syazwanjamil
+\end{tabular}
+\end{center}
+
+\section{EDUCATION}
+{\customcventry{Bachelor of Computer Science (Game Development)}{Multimedia University, Cyberjaya}{CGPA: 3.45}{2013-2016}{}{}}
+
+{\customcventry{Diploma in Information Technology}{Universiti Kuala Lumpur MIIT, Kuala Lumpur}{CGPA: 2.72}{2008-2011}{}{}}
+
+\section{WORK EXPERIENCE}
+
+{\customcventry{Software Engineer}{Twistcode Technologies Sdn Bhd}{Nov 2017 - Present}{Cyberjaya}{}
+    {\begin{itemize}
+        \item Developed NIOSH Augmented Reality Training
+        \item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\\
+    \end{itemize}
+    }
+}
+
+{\customcventry{Application Support Analyst}{DHL IT Services (Asia-Pacific) Sdn Bhd}{Oct 2016 – Oct 2017}{Cyberjaya}{}
+    {\begin{itemize}
+        \item Provide application support and deployment services for part of a given domain to DPDHL Business Units in order to ensure the maximum availability and minimal disruption to business continuity
+        \item Ensure that SLA metrics are met, all incidents are resolved according to the best practices of incident management and resolved within agreed time frames\\
+    \end{itemize}
+    }
+}
+
+{\customcventry{Technical Support Engineer}{Solutions Protocol Sdn Bhd}{Jun 2012 – July 2013}{Sungai Buloh}{}
+    {\begin{itemize}
+        \item Provides operations and maintenance to Sungai Buloh Hospital with integrated healthcare information technology solutions, offering end-to-end solutions including ICT tools
+        \item Support the day-to-day operational basis, perform troubleshooting analysis to hardware, software and system, monitors system performance and implements performance tuning\\
+    \end{itemize}
+    }
+}
+
+{\customcventry{IT Service Technician}{QCD Technology (M) Sdn Bhd}{Jul 2011 – May 2012}{Kuala Lumpur}{}
+    {\begin{itemize}
+        \item Performed repairs on Apple devices and coordinated with Apple manufacturers for the replacement of defective equipment
+        \item Provide reports, documented technical processes and developed other technical documents as requested\\
+    \end{itemize}
+    }
+}
+
+\section{PROJECTS HANDLE}
+
+{\customcvproject{NIOSH Augmented Reality Training (N.A.R.T.)}{}%{Nov 2017 - Aug 2018}
+    {\begin{itemize}
+        \item 
+        \item 
+    \end{itemize}
+    }
+}
+
+{\customcvproject{Kelab Menembak Kajang Membership Management System}{}%{Jun 2016 – July 2017}
+    {\begin{itemize}
+        \item Began a group to create the first 36 hour student-run hackathon ever held at Illinois
+        \item Led 50 staff to raise \$175,000 for HackIllinois, managing relationships with 60+ sponsors
+        \item Plan events to increase social interaction among ACM members, as well as events to foster the spirit of computer science at Illinois
+    \end{itemize}
+    }
+}
+
+{\customcvproject{Mobile and Desktop Game Using Unity3D}{}
+    {\begin{itemize}
+        \item Assist in recruiting potential and admitted students to the UIUC computer science program
+        \item Attend information sessions, admitted student Q\&A’s, and student lunches to generate interest in the Illinois Computer Science department
+    \end{itemize}
+    }
+}
+
+\section{SKILLS AND LANGUAGES}
+\begin{minipage}{\maincolumnwidth}
+	\small{
+    	\begin{itemize}
+          \item Winner, Tata Innovista, November 2016
+          \item President of XYZ Club, Public Relations Manager of Swarthmore QWE Club
+          \item Programming Languages: Python, C, C++, PHP, Java, HTML/CSS, Javascript, jQuery, NodeJS
+          \item Languages: Bahasa Malaysia and English
+		\end{itemize}}
+\end{minipage}
+\end{document}

@@ -1,0 +1,147 @@
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\nopagenumbers{}
+
+\usepackage[scale=0.8]{geometry}                    % adjust the page margins
+
+\usepackage{tikz}
+
+\name{Mohd Syazwan}{B. Mohd Jamil}                  % {first name}{last name}
+
+\newcommand*{\customcventry}[7][.25em]{
+    \begin{tabular}{@{}l} 
+        {\bfseries #2}
+    \end{tabular}
+    \hfill% move it to the right
+    \begin{tabular}{l@{}}
+        {\bfseries #4}
+    \end{tabular} \\
+    \begin{tabular}{@{}l} 
+        {\itshape #3}
+    \end{tabular}
+    \hfill% move it to the right
+    \begin{tabular}{l@{}}
+        {\itshape #5}
+    \end{tabular}
+    \ifx&#7&
+    \else{\\
+        \begin{minipage}{\maincolumnwidth}
+            \small#7
+        \end{minipage}}\fi
+    \par\addvspace{#1}
+}
+
+\newcommand*{\customcvproject}[4][.25em]{
+    \begin{tabular}{@{}l} 
+        {\bfseries #2}
+    \end{tabular}
+    \ifx&#4&
+    \else{\\%
+        \begin{minipage}{\maincolumnwidth}%
+            \small#4%
+        \end{minipage}}\fi%
+    \par\addvspace{#1}
+}
+
+\setlength{\tabcolsep}{12pt}
+
+\geometry{
+ top=5mm,
+ bottom=5mm
+}
+
+%----------------------------------------------------------------------------------
+%           resume content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\hspace{15.5cm}
+\begin{tabular}{ c c c }
+    %\href{http://www.facebook.com}{\huge\faGlobe} & 
+    \href{https://github.com/three2wan}{\huge\faGithub} & 
+    \href{https://www.linkedin.com/in/syazwanjamil/}{\huge\faLinkedinSquare}
+\end{tabular}
+
+\vspace*{5mm}
+\makecvtitle
+\vspace*{-19mm}
+
+\begin{center}
+\begin{tabular}{ c c }
+    \faEnvelopeO\enspace\href{mailto: syazwan\_jamil88@yahoo.com} syazwan\_jamil88@yahoo.com & \faMobile\enspace 0172342869
+\end{tabular}
+\end{center}
+
+
+\vspace{1mm}
+\begin{center}
+    Passionate for programming and game development. Looking to improve my current programming skills, communication and teamwork skills
+\end{center}
+
+\section{TECHNICAL SKILL}
+\begin{minipage}{\maincolumnwidth}
+	\small{
+    	\begin{itemize}
+          \item Programming Languages: C\#, JavaScript, PHP, SQL, Bash, PowerShell
+          \item Front End: ReactJS, HTML5/CSS3
+          \item Back End: CodeIgniter, ASP.NET Core
+          \item Database: MySQL, SQLite
+          \item Other: version control, Unity3D
+		\end{itemize}}
+\end{minipage}
+
+\section{WORK EXPERIENCE}
+{\customcventry{Software Engineer}{Twistcode Technologies Sdn Bhd}{Nov 2017 - Present}{Cyberjaya}{}
+    {\begin{itemize}
+        \item Designed, developed, implemented, tested, deployed and documented software applications according to client requirements
+        \item Participated in sales presentation due to ability to translate user needs into easy-to-understand software solutions
+    \end{itemize}
+    }
+}
+{\customcventry{Application Support Analyst}{DHL IT Services (Asia-Pacific) Sdn Bhd}{Oct 2016 – Oct 2017}{Cyberjaya}{}
+    {\begin{itemize}
+        \item Provide 2nd level support for eCommerce application at DHL IT Services
+        \item Ensure that SLA metrics are met, all incidents are resolved according to the best practices of incident management and resolved within agreed time frames
+    \end{itemize}
+    }
+}
+{\customcventry{Technical Support Engineer}{Solutions Protocol Sdn Bhd}{Jun 2012 – July 2013}{Sungai Buloh}{}
+    {\begin{itemize}
+        \item Provides operations and maintenance to Sungai Buloh Hospital with integrated healthcare information technology solutions, offering end-to-end solutions including ICT tools
+        \item Support the day-to-day operational basis, perform troubleshooting analysis to hardware, software and system, monitors system performance and implements performance tuning
+    \end{itemize}
+    }
+}
+{\customcventry{IT Service Technician}{QCD Technology (M) Sdn Bhd}{Jul 2011 – May 2012}{Kuala Lumpur}{}
+    {\begin{itemize}
+        \item Performed repairs on Apple devices and coordinated with Apple manufacturers for the replacement of defective equipment
+        \item Provide reports, documented technical processes and developed other technical documents as requested
+    \end{itemize}
+    }
+}
+
+\section{PROJECTS}
+{\customcvproject{NIOSH Augmented Reality Training (N.A.R.T.)}{}
+    {\begin{itemize}
+        \item Training simulation application on Microsoft Hololens for ensuring that workers can predict, identify, and respond to potential hazardous conditions before they are exposed to actual site
+        \item Developed and designed user interface and functionality by using MRTK framework and Unity3D
+    \end{itemize}
+    }
+}
+{\customcvproject{Kelab Menembak Kajang Membership Management System}{}
+    {\begin{itemize}
+        \item A web based system developed for Kelab Menembak Kajang, a Malaysian based shooting club, to manage their memberships record
+        \item Build backend application on server side using CodeIgniter framework 
+        \item Developed database and designed RESTful backend server enabling records to be stored persistently in a database
+    \end{itemize}
+    }
+}
+
+\section{EDUCATION}
+{\customcventry{Bachelor of Computer Science (Game Development)}{Multimedia University, Cyberjaya}{CGPA: 3.45}{2013-2016}{}{}}
+{\customcventry{Diploma in Information Technology}{Universiti Kuala Lumpur MIIT, Kuala Lumpur}{CGPA: 2.72}{2008-2011}{}{}}
+
+\end{document}
