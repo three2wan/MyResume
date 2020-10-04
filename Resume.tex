@@ -11,7 +11,7 @@
 
 \name{Mohd Syazwan}{B. Mohd Jamil}                  % {first name}{last name}
 
-\newcommand*{\customcventry}[7][.25em]{
+\newcommand*{\customcventry}[7][.3em]{
     \begin{tabular}{@{}l} 
         {\bfseries #2}
     \end{tabular}
@@ -34,7 +34,7 @@
     \par\addvspace{#1}
 }
 
-\newcommand*{\customcvproject}[4][.25em]{
+\newcommand*{\customcvproject}[4][.3em]{
     \begin{tabular}{@{}l} 
         {\bfseries #2}
     \end{tabular}
@@ -46,11 +46,11 @@
     \par\addvspace{#1}
 }
 
-\setlength{\tabcolsep}{12pt}
+\setlength{\tabcolsep}{13pt}
 
 \geometry{
- top=5mm,
- bottom=5mm
+ top=15mm,
+ bottom=20mm
 }
 
 %----------------------------------------------------------------------------------
@@ -85,16 +85,22 @@
 \begin{minipage}{\maincolumnwidth}
 	\small{
     	\begin{itemize}
-          \item Programming Languages: C\#, JavaScript, PHP, SQL, Bash, PowerShell
-          \item Front End: ReactJS, HTML5/CSS3
-          \item Back End: CodeIgniter, ASP.NET Core
-          \item Database: MySQL, SQLite
-          \item Other: version control, Unity3D
+          \item Framework: CodeIgniter (PHP), Unity3D (C\#), ASP.NET Core (C\#)
+          \item Database: MySQL, SQL Server
+          \item Others: Bitbucket, WinSCP, Postman, PuTTY
 		\end{itemize}}
 \end{minipage}
 
 \section{WORK EXPERIENCE}
-{\customcventry{Software Engineer}{Twistcode Technologies Sdn Bhd}{Nov 2017 - Present}{Cyberjaya}{}
+{\customcventry{Technology Associate}{Dapat Vista(M) Sdn Bhd}{Mar 2020 - Present}{Kelana Jaya}{}
+    {\begin{itemize}
+        \item Designing, developing and testing for progressive web applications based on requirements
+        \item Writing SQL queries, monitoring and optimizing database performance
+        \item Working with API integration
+    \end{itemize}
+    }
+}
+{\customcventry{Software Engineer}{Twistcode Technologies Sdn Bhd}{Nov 2017 - Mar 2020}{Cyberjaya}{}
     {\begin{itemize}
         \item Designed, developed, implemented, tested, deployed and documented software applications according to client requirements
         \item Participated in sales presentation due to ability to translate user needs into easy-to-understand software solutions
@@ -124,6 +130,21 @@
 }
 
 \section{PROJECTS}
+{\customcvproject{Progressive Web App for Consolidates Users Data with Government Agencies(MyPay)}{}
+    {\begin{itemize}
+        \item Integrating and handling development search compound and tax assessment and make payment for local council agencies
+        \item Provide support and patches on current application
+    \end{itemize}
+    }
+}
+{\customcvproject{Web App for Digital Bail Payment(eJamin)}{}
+    {\begin{itemize}
+        \item Responsibility on developing new version admin portal for initiate the accused bail process
+         up to refund process
+        \item Support the day-to-day operational on current live application
+    \end{itemize}
+    }
+}
 {\customcvproject{NIOSH Augmented Reality Training (N.A.R.T.)}{}
     {\begin{itemize}
         \item Training simulation application on Microsoft Hololens for ensuring that workers can predict, identify, and respond to potential hazardous conditions before they are exposed to actual site
